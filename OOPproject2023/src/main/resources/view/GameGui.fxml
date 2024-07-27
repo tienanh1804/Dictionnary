@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="containerAnchor" prefHeight="510.0" prefWidth="765.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javaproject2023.Game">
+    <children>
+        <Pane layoutX="3.0" prefHeight="91.0" prefWidth="764.0" styleClass="header">
+            <children>
+                <Pane layoutX="316.0" layoutY="20.0" />
+                <ImageView fitHeight="78.0" fitWidth="110.0" layoutX="343.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Icons/flash_cards.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <AnchorPane layoutX="3.0" layoutY="98.0" prefHeight="421.0" prefWidth="769.0" styleClass="nen" stylesheets="@../style.css">
+            <children>
+                <Pane layoutX="2.0" prefHeight="45.0" prefWidth="764.0" styleClass="title" stylesheets="@../style.css">
+                    <children>
+                        <Label layoutX="20.0" prefHeight="45.0" prefWidth="240.0" text="Matching Game" textFill="#c67abb">
+                            <font>
+                                <Font name="System Bold Italic" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+            <Button ellipsisString="" layoutX="359.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleClickReset" prefHeight="50.0" prefWidth="50.0" styleClass="reset" stylesheets="@../style.css" text="Reset">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/play-again.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label fx:id="question_label" alignment="CENTER" ellipsisString="" layoutX="289.0" layoutY="82.0" prefHeight="54.0" prefWidth="176.0" styleClass="question" stylesheets="@../style.css" text="Question" textFill="#d9c043" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="answer1_button" layoutX="181.0" layoutY="183.0" mnemonicParsing="false" onAction="#check1" prefHeight="54.0" prefWidth="143.0" styleClass="game-answer" stylesheets="@../style.css" text="Button">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button fx:id="answer2_button" layoutX="447.0" layoutY="183.0" mnemonicParsing="false" onAction="#check2" prefHeight="54.0" prefWidth="143.0" styleClass="game-answer" stylesheets="@../style.css" text="Button">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button fx:id="answer3_button" layoutX="181.0" layoutY="258.0" mnemonicParsing="false" onAction="#check3" prefHeight="54.0" prefWidth="143.0" styleClass="game-answer" stylesheets="@../style.css" text="Button">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button fx:id="answer4_button" layoutX="447.0" layoutY="258.0" mnemonicParsing="false" onAction="#check4" prefHeight="54.0" prefWidth="143.0" styleClass="game-answer" stylesheets="@../style.css" text="Button">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Label fx:id="correct" ellipsisString="" layoutX="479.0" layoutY="94.0" prefHeight="31.0" prefWidth="78.0" text="Correct" textFill="#e14810">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="incorrect" ellipsisString="" layoutX="479.0" layoutY="94.0" prefHeight="31.0" prefWidth="94.0" text="Incorrect" textFill="#e14810">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
