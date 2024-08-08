@@ -4,9 +4,6 @@ import java.util.Scanner;
 
 public class DictionaryManagement extends Dictionary {
 
-    //    public DictionaryManagement() {
-//        insertFromFile("D:\\IdeaProjects\\quoc2\\dictionary.txt");
-//    }
     public static void insertFromCommandline() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhập số lượng từ vựng: ");
